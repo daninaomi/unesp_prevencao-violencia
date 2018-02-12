@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    font-family: sans-serif;
+    font-family: 'Droid serif', serif;
+    text-align: justify;
 }
 
 body {
@@ -21,7 +22,7 @@ li {
 /*MOBILE FIRST*/
 
 .nav-principal {
-    background: cornflowerblue;
+    background: #006686;
     height: 60px;
     padding: 2%;
     /*position: relative;*/
@@ -49,7 +50,7 @@ li {
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
-    background: cornflowerblue;
+    background: #006686;
 }
 
 .nav-menu-button:checked ~ .nav-menu-list {
@@ -57,8 +58,11 @@ li {
     left: 0;
 }
 
+.nav-menu-list__item {
+    margin: 8% 5%;
+}
+
 .nav-menu-list__link {
-    margin: 7% 5%;
     color: white;
 }
 
@@ -80,12 +84,38 @@ li {
 
 .main-title {
     position: absolute;
-    bottom: 10px;
-    color: hotpink;
-    font-size: 2rem;
+    bottom: 4px;
+}
+
+.main-title-h1 {
+    font-family: 'Oswald' , sans-serif;
+    text-align: center;
+    color: #f2778f;
+    font-weight: 700;
+    font-size: 3.6rem;
     text-transform: uppercase;
 }
 
+.main-article {
+    padding: 6%;
+}
+
+.main-article--abertura {
+    color: #f2778f;
+}
+
+.main-article--abertura__title {
+    font-family: 'Oswald' , sans-serif;
+}
+
+.main-article--abertura__title--destaque {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main-article--pink {
+    background: #fff7f6;
+}
 
 
 .main-parag-text {
