@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
+    /*width: 100%;*/
     font-family: 'Droid serif', serif;
 }
 
@@ -19,14 +19,10 @@ li {
     list-style-type: none; 
 }
 
-/* .container {
-    max-width: 1024px;
-} */
-
 /* -------- MOBILE ------- */
 
 .nav-principal {
-    background: #006686;
+    width: 100%;
     height: 60px;
     padding: 3.5%;
     display: flex;
@@ -34,7 +30,12 @@ li {
     position: fixed; 
     top: 0;
     z-index: 2;
+    background: #006686;
 }
+
+.container {
+    max-width: 1024px;
+} 
 
 .nav-menu {
     width: 20%;
@@ -42,7 +43,7 @@ li {
 
 .icon-menu:hover, .icon-menu:focus {
     cursor: pointer;
-    cursor: hand;
+    /*cursor: hand;*/
 }
 
 .icon-menu {
@@ -55,7 +56,7 @@ li {
 }
 
 .nav-menu-list {
-    height: 100%;
+    height: 100vh;
     width: 50%;
     position: absolute;
     left: -50%;
@@ -99,9 +100,15 @@ li {
     margin-top: 60px;
 }
 
+.main-banner-gif {
+    width: 100%;    
+}
+
 .main-title {
     position: absolute;
     bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-title-h1 {
@@ -179,7 +186,7 @@ li {
 
 .abertura__credits-block {
     flex-grow: 1;
-    width: 46%;
+    /*width: 46%;*/
     margin-top: 3%;
 }
 
@@ -305,6 +312,7 @@ li {
 
     .main-article--abertura {
         display: flex;
+        flex-wrap: wrap;
         padding: 10% 18%;
     }
 
@@ -337,9 +345,8 @@ li {
     }
 
     .abertura-text-block {
-        flex-grow: 2;
-        /* width: 900px; */
-        /* flex-basis: 150px; */
+         flex-basis: 400px; 
+         margin-right: 6%;
     }
 
     .abertura__credits, .abertura__credits-title--right, .abertura__credits-text--right {
@@ -347,11 +354,8 @@ li {
     }
 
     .abertura__credits {
-        flex-grow: 1;
-        width: 200px;
-        /* flex-basis: 250px; */
+        flex-basis: 200px; 
         display: block;
-        margin-left: 6%;
     }
     
     .abertura__credits-title {
@@ -375,7 +379,7 @@ li {
     }
 
     .main-banner__trans-def {
-        width: 40%;
+        width: 45%;
         top: 35%;
     }
 
@@ -386,18 +390,6 @@ li {
     .main-banner__trans-def-subtitle {
         font-size: 2.2rem;
     }
-
-    /* .main-article-denuncias {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        align-items: space-between;
-    }
-
-    .main-article-denuncias__item {
-        width: 40%;
-        margin-right: 10%;
-    } */
 
     .footer-credits {
         display: flex;
