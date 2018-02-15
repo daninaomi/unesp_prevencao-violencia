@@ -346,7 +346,7 @@ li {
 
     .abertura-text-block {
          flex-basis: 400px; 
-         margin-right: 6%;
+         margin-right: 8%;
     }
 
     .abertura__credits, .abertura__credits-title--right, .abertura__credits-text--right {
@@ -356,6 +356,10 @@ li {
     .abertura__credits {
         flex-basis: 200px; 
         display: block;
+    }
+
+    .abertura__credits-block {
+        margin: 0 0 7% 0;
     }
     
     .abertura__credits-title {
