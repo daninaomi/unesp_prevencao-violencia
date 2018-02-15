@@ -75,6 +75,8 @@ li {
 
 .nav-menu-list__link {
     color: white;
+    font-family: 'Oswald' , sans-serif;
+    font-weight: 300;
 }
 
 .nav-logo-unesp {
@@ -118,6 +120,10 @@ li {
     font-weight: 700;
     font-size: 3rem;
     text-transform: uppercase;
+}
+
+.shown {
+    display: none;
 }
 
 .main-article--abertura {
