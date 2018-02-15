@@ -24,7 +24,7 @@ li {
 .nav-principal {
     width: 100%;
     height: 60px;
-    padding: 3.5%;
+    padding: 3%;
     display: flex;
     justify-content: space-between;
     position: fixed; 
@@ -35,6 +35,7 @@ li {
 
 .container {
     max-width: 1024px;
+    margin: 0 auto;
 } 
 
 .nav-menu {
@@ -84,12 +85,14 @@ li {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    top: 20%;
 }
 
 .nav-info {
     width: 28px;
     position: absolute;
-    right: 5%;
+    right: 20px;
+    top: 14px;
 }
 
 .main-banner {
@@ -295,15 +298,21 @@ li {
         align-items: center;
         height: 80px;
     }
+
+    .nav-menu-list {
+        width: 35%;
+        left: -35%;
+    }
         
     .nav-info {
         width: 30px;
-        right: 3%;
-        top: 25%;
+        right: 25px;
+        top: 26%;
     }
 
     .nav-logo-unesp {
         width: 110px;
+        top: 25%;
     }
 
     .main-title-h1 {
@@ -345,7 +354,7 @@ li {
     }
 
     .abertura-text-block {
-         flex-basis: 400px; 
+         flex-basis: 300px; 
          margin-right: 8%;
     }
 
@@ -354,7 +363,7 @@ li {
     }
 
     .abertura__credits {
-        flex-basis: 200px; 
+        flex-basis: 150px; 
         display: block;
     }
 
@@ -412,6 +421,62 @@ li {
 
     .footer-credits-list {
         width: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .main-title-h1 {
+        font-size: 7rem;
+    }
+
+    .abertura-text-block {
+         flex-basis: 450px; 
+         margin-right: 8%;
+    }
+
+    .abertura__credits-block {
+        margin: 0 0 10% 0;
+    }
+
+    .main-banner__trans-def {
+        width: 42%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .nav-menu-list {
+        width: 20%;
+        left: -20%;
+        top: 100px;
+    }
+
+    .main-title-h1 {
+        font-size: 7rem;
+    }
+
+    .abertura-text-block {
+         flex-basis: 640px; 
+         margin-right: 8%;
+    }
+
+    .abertura__credits {
+        flex-basis: 200px; 
+    }
+
+    .main-banner__trans-def {
+        width: 35%;
+        right: 12%;
+    }
+
+    .main-banner__trans-def-title {
+        font-size: 1.7rem;
+    }
+
+    .main-banner__trans-def-subtitle {
+        font-size: 3rem;
     }
 
 }
