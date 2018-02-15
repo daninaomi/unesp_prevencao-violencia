@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*width: 100%;*/
     font-family: 'Droid serif', serif;
 }
 
@@ -35,7 +34,6 @@ li {
 
 .container {
     max-width: 1024px;
-    margin: 0 auto;
 } 
 
 .nav-menu {
@@ -44,7 +42,6 @@ li {
 
 .icon-menu:hover, .icon-menu:focus {
     cursor: pointer;
-    /*cursor: hand;*/
 }
 
 .icon-menu {
@@ -119,7 +116,7 @@ li {
     text-align: center;
     color: #f2778f;
     font-weight: 700;
-    font-size: 3.6rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
@@ -134,6 +131,7 @@ li {
     position: absolute;
     float: left;
     z-index: -1;
+    opacity: 0.5;
 }
 
 .flor-1 {
@@ -162,16 +160,17 @@ li {
 .abertura__title {
     font-family: 'Oswald' , sans-serif;
     font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .abertura__text{
     margin-top: 5%;
     font-family: 'Oswald' , sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
     text-align-last: left;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
 }
 
 .abertura__title--destaque {
@@ -179,6 +178,7 @@ li {
     font-style: italic;
     text-align: justify;
     text-align-last: left;
+    font-size: 0.9rem;
 }
 
 .abertura__credits {
@@ -189,7 +189,6 @@ li {
 
 .abertura__credits-block {
     flex-grow: 1;
-    /*width: 46%;*/
     margin-top: 3%;
 }
 
@@ -208,7 +207,7 @@ li {
 .abertura__credits-text {
     font-family: 'Oswald' , sans-serif;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: left;
 }
 
@@ -230,11 +229,12 @@ li {
     color: #8db0b8;
     margin-bottom: 5%;
     text-align: left;
+    font-size: 1.3rem;
 }
 
 .main-article__text {
     color: #58595b;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-bottom: 6%;
     text-align: justify;
     text-align-last: left;
@@ -258,7 +258,7 @@ li {
 .main-banner__trans-def-subtitle {
     font-family: 'Oswald' , sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #8575ad;
 }
 
@@ -270,7 +270,7 @@ li {
 }
 
 .footer-credits__title {
-    width: 50%;
+    width: 70%;
     margin-bottom: 5%;   
     font-family: 'Oswald' , sans-serif;
     color: #f2778f;
@@ -290,7 +290,56 @@ li {
     line-height: 1rem;
 }
 
-/* --------DESKTOP------ */
+/* --------MOBILE LARGE------ */
+
+@media only screen and (min-width: 425px) {
+
+    .main-title-h1 {
+        font-size: 3.6rem;
+    }
+
+    .abertura__title {
+        font-size: 1.5em;
+    }
+
+    .abertura__text {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .abertura__title--destaque {
+        font-size: 1rem;
+    }
+
+    .abertura__credits-title {
+        font-size: .9rem;
+    }
+
+    .abertura__credits-text {
+        font-size: .8rem;
+    }
+
+    .abertura__credits-text {
+        font-size: 0.8rem;
+    }
+
+    .main-article__title {
+        font-size: 1.5em;
+    }
+
+    .main-article__text {
+        font-size: 0.9rem;
+    }
+
+    .main-banner__trans-def-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .footer-credits__title {
+        width: 50%; 
+    }
+
+/* --------TABLET------ */
 
 @media only screen and (min-width: 768px) {
 
@@ -425,6 +474,8 @@ li {
 
 }
 
+/* --------DESKTOP------ */
+
 @media only screen and (min-width: 1024px) {
 
     .main-title-h1 {
@@ -450,7 +501,7 @@ li {
     .nav-menu-list {
         width: 20%;
         left: -20%;
-        top: 100px;
+        top: 85px;
     }
 
     .main-title-h1 {
